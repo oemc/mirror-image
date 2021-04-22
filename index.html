@@ -1,22 +1,39 @@
-<div id="main">
-  <div id="header"><h1>Mirror Image Tool</h1></div>
-  <div class="vertical-container">
-    <h2>Original Image</h2>
-    <input id="original_input" type="file"/>
-    <canvas id="canvas_image" class="image"</canvas>
-  </div>
-  <div class="horizontal-container">
-    <div class="vertical-container">
-      <h2>Left Mirrored</h2>
-      <button id="buttonL" onclick="save('mirrored_image1')" >Download</button>
-      <canvas id="mirrored_image1" class="image"</canvas>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Javascript tool to mirror effect your images">
+    <meta name="keywords" content="HTML, JavaScript, CSS, Web, Tool, Mirror, Images, Boxart">
+    <meta name="author" content="Oscar Morales">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <title>Mirror Image Tool</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="main">
+      <div id="header"><h1>Mirror Image Tool</h1></div>
+      <div class="vertical-container">
+        <h2>Original Image</h2>
+        <input id="original_input" type="file"/>
+        <canvas id="canvas_image" class="image"></canvas>
+      </div>
+      <div class="horizontal-container">
+        <div class="vertical-container">
+          <h2>Left Mirrored</h2>
+          <button id="buttonL" onclick="save('mirrored_image1')" >Download</button>
+          <canvas id="mirrored_image1" class="image"></canvas>
+        </div>
+        <div class="vertical-container">
+          <h2>Right Mirrored</h2>
+          <button id="buttonR" onclick="save('mirrored_image2')">Download</button>
+          <canvas id="mirrored_image2" class="image"></canvas>
+        </div>
+      </div>
+      <div id="footer">This page was made with HTML, CSS and JavaScript by Oscar Morales - 2021</div>
     </div>
-    <div class="vertical-container">
-      <h2>Right Mirrored</h2>
-      <button id="buttonR" onclick="save('mirrored_image2')">Download</button>
-      <canvas id="mirrored_image2" class="image"></canvas>
-    </div>
-  </div>
-  <div id="footer">This page was made with HTML, CSS and JavaScript by Oscar Morales - 2021</div>
-</div>
-<img id="original_image">
+    <img id="original_image">
+    <script src="./script.js"></script>
+  </body>
+</html>
