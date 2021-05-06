@@ -12,4 +12,4 @@ Load a picture from your device to apply the mirror effect to it. Your browser m
 
 # License
 
-[MIT](https://github.com/oemc/mirror-image/blob/main/README.md)
+[MIT](https://github.com/oemc/mirror-image/blob/main/LICENSE)
